@@ -31,7 +31,7 @@ http.createServer(async (req, res) => {
 
 const extractLatestStories = (finalHtmlData) => {
   try {
-    const splitData = finalHtmlData?.toString()?.split('<li class="latest-stories__item">')
+  const splitData = finalHtmlData?.toString()?.split('<li class="latest-stories__item">')
   const length = splitData.length < 6 ? splitData.length : 6
   let latestStories = []
 
